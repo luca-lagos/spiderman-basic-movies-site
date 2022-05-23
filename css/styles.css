@@ -1,0 +1,96 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --red-principal: #DF1F2D;
+    --red-dark: #B11313;
+    --blue-principal:#447BBE;
+    --blue-dark:#2B3784;
+    --soft-blue: hsl(215, 51%, 70%);
+    --white: #ffffff;
+}
+
+body{
+    background-color: var(--blue-dark);
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+}
+
+main{
+    margin: auto;
+    font-family: 'Spinnaker', sans-serif;
+    text-align: center;
+    width: 80%;
+    
+}
+
+h1{
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--red-principal);
+    text-shadow: 2px 0 0 var(--white), -2px 0 0 var(--white), 0 2px 0 var(--white), 0 -2px 0 var(--white), 1px 1px var(--white), -1px -1px 0 var(--white), 1px -1px 0 var(--white), -1px 1px 0 var(--white);
+    margin: 30px auto 10px auto
+}
+
+h3{
+    margin-bottom: 30px;
+    color: var(--white);
+}
+
+h3 a{
+    text-decoration: none;
+    color: var(--blue-principal);
+    font-weight: bold;
+    transition: all .4s ease;
+}
+
+h3 a:hover{
+    color: var(--soft-blue);
+}
+
+#container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 250px);
+    gap: 30px;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+#container .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px auto 5px auto;
+    background-color: var(--blue-principal);
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px 2px var(--soft-blue);
+}
+
+#container .card img{
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+#container .card h1{
+    font-size: 18px;
+    max-width: 150px;
+    margin: 20px auto 10px auto;
+    text-shadow: none;
+    color: var(--white);
+}
+
+#container .card small{
+    margin-bottom: 20px;
+    font-style: italic;
+    font-weight: bold;
+    color: var(--blue-dark);
+}
+
